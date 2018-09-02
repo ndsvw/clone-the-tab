@@ -1,0 +1,38 @@
+{
+  "description": "Clone the active Tab",
+  "manifest_version": 2,
+  "name": "Clone the Tab",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "icons": {
+    "32": "icon32.png"
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Clone the tab",
+    "default_icon": {
+      "32": "icon32.png"
+    }
+  },
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "57.0a1"
+    }
+  },
+  "commands": {
+    "execute": {
+      "suggested_key": {
+        "default": "Ctrl+Y",
+        "linux": "Ctrl+Y"
+      },
+      "description": "Clone/Duplicates the tab"
+    }
+  }
+}
