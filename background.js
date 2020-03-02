@@ -1,6 +1,7 @@
 let duplicate = async () => {
-  let cur = await browser.tabs.query({ active: true });
-  await browser.tabs.duplicate(cur[0].id);
+  let curWindow = await browser.windows.getCurrent({populate: true});
+  let curTab = (await browser.tabs.query({ active: true, windowId: curWindow.id}))[0];
+  await browser.tabs.duplicate(curTab.id);
 }
 
 browser.browserAction.onClicked.addListener(async () => {
