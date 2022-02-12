@@ -4,8 +4,8 @@
 
 ## How does it work?
 
-Just click the icon of this Add-on or press "Ctrl+Y" / "CMD+Y".
+Just click the icon of this Add-on or press "Ctrl+Alt+D" / "Cmd+Alt+D".
 
 ## Why does this addon exist?
 
-Firefox did not implement a key-combination to duplicate a tab.
+Mozilla did not implement a key-combination to clone/duplicate a tab in Firefox.
